@@ -9,6 +9,7 @@ package com.pest.suite;
 public class Launcher {
 
 	public static String version = "1.0";
+	String[] rawArgs;
 	
 	/**
 	 * Entry point.  Creates a Launcher instance and activates it.
@@ -22,10 +23,7 @@ public class Launcher {
 	
 	
 	public Launcher(String[] args) {
-		if (processArgs(args)) {
-			
-		}
-		
+		rawArgs = args;
 	}
 	
 	public boolean processArgs(String[] args) {
