@@ -14,5 +14,11 @@ public class TestLauncher {
 		launcher = new Launcher(new String[] {});
 		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
 	}
+	
+	@Test
+	public void testProcessArgsWithEmptyArray() {
+		launcher = new Launcher(null);
+		assertFalse(launcher.processArgs(new String[] {}));
+	}
 
 }
