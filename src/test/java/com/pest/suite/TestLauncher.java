@@ -20,5 +20,11 @@ public class TestLauncher {
 		launcher = new Launcher(null);
 		assertFalse(launcher.processArgs(new String[] {}));
 	}
+	
+	@Test
+	public void testProcessArgsWithNonEmptyArray() {
+		launcher = new Launcher(null);
+		assertTrue(launcher.processArgs(new String[] {"ASDA"}));
+	}
 
 }
