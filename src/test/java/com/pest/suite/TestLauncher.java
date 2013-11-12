@@ -1,0 +1,18 @@
+package com.pest.suite;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestLauncher {
+
+	Launcher launcher;
+
+	@Test
+	public void testUsageMessage() {
+		launcher = new Launcher(new String[] {});
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
+	}
+
+}
