@@ -22,9 +22,15 @@ public class TestLauncher {
 	}
 	
 	@Test
-	public void testProcessArgsWithNonEmptyArray() {
+	public void testProcessArgsWithSingleArgument() {
 		launcher = new Launcher(null);
 		assertTrue(launcher.processArgs(new String[] {"ASDA"}));
+	}
+	
+	@Test
+	public void testProcessArgsWithMultipleArguments() {
+		launcher = new Launcher(null);
+		assertTrue(launcher.processArgs(new String[] {"ASDA","TESCO"}));
 	}
 
 }
