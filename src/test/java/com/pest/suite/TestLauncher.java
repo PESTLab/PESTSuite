@@ -11,8 +11,8 @@ public class TestLauncher {
 
 	@Test
 	public void testUsageMessage() {
-		launcher = new Laucher(new String[] {});
-		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
+		launcher = new Launcher(new String[] {});
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jr", launcher.getUsageMessage());
 	}
 	
 	@Test
