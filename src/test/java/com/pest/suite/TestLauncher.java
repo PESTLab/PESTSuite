@@ -12,7 +12,25 @@ public class TestLauncher {
 	@Test
 	public void testUsageMessage() {
 		launcher = new Launcher(new String[] {});
-		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jr", launcher.getUsageMessage());
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
+	}
+	
+	@Test
+	public void testUsageMessage2() {
+		launcher = new Launcher(new String[] {});
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
+	}
+	
+	@Test
+	public void testUsageMessage3() {
+		launcher = new Launcher(new String[] {});
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
+	}
+	
+	@Test
+	public void testUsageMessage4() {
+		launcher = new Launcher(new String[] {});
+		assertEquals("Usage: java -jar pestsuite-1.0-SNAPSHOT.jar", launcher.getUsageMessage());
 	}
 	
 	@Test
